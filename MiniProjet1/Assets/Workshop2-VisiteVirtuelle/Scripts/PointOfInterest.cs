@@ -25,7 +25,7 @@ public class PointOfInterest : MonoBehaviour
     public void SetGameObjectPositionByPOI()
     {
         var position = _pointOfInterestData.Position;
-        this.transform.position = new Vector3(position.x, 0, position.y);
+        this.transform.position = new Vector3(position.x, 2, position.y);
     }
 }
 
