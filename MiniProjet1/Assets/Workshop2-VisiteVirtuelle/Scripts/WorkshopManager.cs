@@ -45,18 +45,6 @@ public class WorkshopManager : MonoBehaviour
     }
     public void DisplayPOI(PointOfInterestStruct poiInfo)
     {
-        if (Window == null)
-        {
-            Debug.LogError("Window is not initialized!");
-            return;
-        }
-
-        if (Player == null)
-        {
-            Debug.LogError("Player is not initialized!");
-            return;
-        }
-
         Window.FillData(poiInfo);
         Window.gameObject.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
