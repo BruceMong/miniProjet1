@@ -43,4 +43,5 @@ public class EditorManager : WorkshopManager
             file.Write(json);
         }
     }
+
 }
