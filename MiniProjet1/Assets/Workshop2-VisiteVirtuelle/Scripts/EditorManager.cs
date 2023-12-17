@@ -11,7 +11,7 @@ public class EditorManager : WorkshopManager
     public void CreateNewPointOfInterest(Vector3 playerPos, Vector3 playerRotation)
     {
         var poiPosition = playerPos + (playerRotation);
-        poiPosition.y = 0.0f;
+        poiPosition.y = 03.0f;
         PositionStruct posStruct = new PositionStruct(poiPosition.x, poiPosition.z);
         var poi = Instantiate(PointOfInterestPrefab, poiPosition,
        PointOfInterestPrefab.transform.rotation);
